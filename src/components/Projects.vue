@@ -84,7 +84,7 @@ export default class Projects extends Vue {
     {
       title: "Keyblind",
       description:
-        "Keyblind is a typing practice website with many languange and options to choose",
+        "Keyblind is a typing practice website with many language and options to choose",
       site: "https://keyblind.com",
       tags: ["Vue"]
     },
