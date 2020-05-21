@@ -1,7 +1,13 @@
 # vincentjonathan.com
 
+Source code for my personal website, [vincentjonathan.com](https://vincentjonathan.com)
+
+Feel free to use it as a reference.
+
 ## Project setup
 ```
+git clone https://github.com/VincentJonathan/vincentjonathan.com.git
+cd vincentjonathan.com
 npm install
 ```
 
@@ -19,6 +25,3 @@ npm run build
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
