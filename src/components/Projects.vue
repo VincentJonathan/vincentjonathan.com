@@ -70,8 +70,7 @@ export default class Projects extends Vue {
       title: "Ulas",
       description:
         "Ulas is a website that allows user to give a review to a product or place",
-      github: "https://github.com/VincentJonathan/nobar-vue/",
-      site: "http://nobar.vincentjonathan.com/",
+      site: "http://ulas.vincentjonathan.com/",
       tags: ["Vue", "Vuetify", "Flask", "mongoDB"]
     },
     {
