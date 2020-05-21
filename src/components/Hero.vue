@@ -2,7 +2,7 @@
   <section id="hero">
     <v-img class="bg-main" src="@/assets/img/bg.jpg">
       <v-row
-        class="fill-height text-right pa-md-5 pa-3 mx-0 align-center justify-center"
+        class="fill-height text-right pa-md-5 pa-0 mx-0 align-center justify-center"
       >
         <div class="text-center bg-dark pa-8">
           <div class="text-uppercase display-1">Vincent Jonathan</div>

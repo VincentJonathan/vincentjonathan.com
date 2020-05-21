@@ -5,44 +5,47 @@
         <h3 class="primary--text display-2 font-weight-medium">Skills</h3>
       </v-col>
       <v-col cols="12">
-        <v-parallax
-          v-for="skill in skills"
-          :key="skill.title"
-          :src="getImgUrl(skill.background)"
-          class="mx-n11 mb-4"
-          :height="$vuetify.breakpoint.smAndDown ? 300 : 200"
-        >
-          <div class="pa-8">
-            <v-row>
-              <v-col cols="auto" v-if="skill.logo">
-                <v-img
-                  :src="getImgUrl(skill.logo)"
-                  contain
-                  width="50"
-                  height="50"
-                ></v-img>
-              </v-col>
-              <v-col cols="auto">
-                <div class="display-1">
-                  {{ skill.title }}
-                </div>
-              </v-col>
-            </v-row>
-            <v-row>
-              <v-col
-                cols="12"
-                md="auto"
-                class="pa-1"
-                v-for="pill in skill.pills"
-                :key="pill"
-              >
-                <v-chip color="primary" outlined small>
-                  {{ pill }}
-                </v-chip>
-              </v-col>
-            </v-row>
+        <template v-for="skill in skills">
+          <div :key="skill.title">
+            <v-parallax
+              :src="getImgUrl(skill.background)"
+              class="mx-n11"
+              :height="300"
+            >
+              <div class="pa-8">
+                <v-row class="justify-center">
+                  <v-col cols="auto" v-if="skill.logo">
+                    <v-img
+                      :src="getImgUrl(skill.logo)"
+                      contain
+                      width="50"
+                      height="50"
+                    ></v-img>
+                  </v-col>
+                  <v-col cols="auto">
+                    <div class="display-1">
+                      {{ skill.title }}
+                    </div>
+                  </v-col>
+                </v-row>
+                <v-row class="justify-center">
+                  <v-col
+                    cols="12"
+                    md="auto"
+                    class="pa-1 text-center"
+                    v-for="pill in skill.pills"
+                    :key="pill"
+                  >
+                    <v-chip color="primary" outlined>
+                      {{ pill }}
+                    </v-chip>
+                  </v-col>
+                </v-row>
+              </div>
+            </v-parallax>
+            <v-divider class="my-6"></v-divider>
           </div>
-        </v-parallax>
+        </template>
       </v-col>
       <v-col cols="12">
         <h4 class="primary--text headline mb-4">Other Skills</h4>
