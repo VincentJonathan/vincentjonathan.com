@@ -20,6 +20,7 @@
                       contain
                       width="50"
                       height="50"
+                      :alt="skill.title"
                     ></v-img>
                   </v-col>
                   <v-col cols="auto">
