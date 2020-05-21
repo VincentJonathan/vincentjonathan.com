@@ -1,0 +1,16 @@
+.bg-main {
+    background-image: url("~@/assets/img/bg.jpg");
+    height: 100vh;
+}
+
+.bg-dark {
+    background-color: #00000080;
+}
+
+.no-decoration a{
+    text-decoration: none;
+}
+
+.v-parallax__image {
+    opacity: 0.25 !important;
+}
