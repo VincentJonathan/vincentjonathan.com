@@ -105,13 +105,11 @@ export default class About extends Vue {
 
   @Socket()
   connected() {
-    console.log("connected");
     this.isConnected = true;
   }
 
   @Socket()
   disconnected() {
-    console.log("disconnected");
     this.isConnected = false;
   }
 
