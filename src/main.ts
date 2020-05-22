@@ -23,7 +23,11 @@ Vue.use(VueScrollTo, {
   y: true
 });
 
-const socket = io("http://localhost:3000");
+const socket = io(
+  process.env.NODE_ENV === "production"
+    ? "http://localhost:3000"
+    : "http://sio1.vincentjonathan.com:3000"
+);
 Vue.use(VueSocketIOExt, socket);
 
 Vue.mixin({
