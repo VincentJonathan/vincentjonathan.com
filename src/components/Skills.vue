@@ -10,7 +10,7 @@
             <v-parallax
               :src="getImgUrl(skill.background)"
               class="mx-n11"
-              :height="300"
+              :height="250"
             >
               <div class="pa-8">
                 <v-row class="justify-center">
@@ -31,8 +31,7 @@
                 </v-row>
                 <v-row class="justify-center">
                   <v-col
-                    cols="12"
-                    md="auto"
+                    cols="auto"
                     class="pa-1 text-center"
                     v-for="pill in skill.pills"
                     :key="pill"
@@ -44,7 +43,7 @@
                 </v-row>
               </div>
             </v-parallax>
-            <v-divider class="my-6"></v-divider>
+            <v-divider class="my-12"></v-divider>
           </div>
         </template>
       </v-col>
