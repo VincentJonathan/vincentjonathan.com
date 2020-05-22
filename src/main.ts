@@ -25,7 +25,7 @@ Vue.use(VueScrollTo, {
 
 const socket = io(
   process.env.NODE_ENV === "production"
-    ? "http://sio1.vincentjonathan.com:3000"
+    ? "https://sio1.vincentjonathan.com:3000"
     : "http://localhost:3000"
 );
 Vue.use(VueSocketIOExt, socket);
