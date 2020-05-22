@@ -4,6 +4,8 @@ import router from "./router";
 import store from "./store";
 import vuetify from "./plugins/vuetify";
 import VueScrollTo from "vue-scrollto";
+import VueSocketIOExt from "vue-socket.io-extended";
+import io from "socket.io-client";
 
 Vue.config.productionTip = false;
 
@@ -20,6 +22,9 @@ Vue.use(VueScrollTo, {
   x: false,
   y: true
 });
+
+const socket = io("http://localhost:3000");
+Vue.use(VueSocketIOExt, socket);
 
 Vue.mixin({
   methods: {
