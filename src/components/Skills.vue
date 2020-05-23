@@ -47,7 +47,7 @@
           </div>
         </template>
       </v-col>
-      <v-col cols="12">
+      <v-col cols="12" class="px-0 px-md-3">
         <v-slide-group class="" mandatory show-arrows>
           <v-slide-item v-for="skill in otherSkills" :key="skill.title">
             <v-row>
@@ -56,7 +56,7 @@
                   :src="getImgUrl(skill.logo)"
                   v-if="skill.logo"
                   contain
-                  :width="$vuetify.breakpoint.mdAndUp ? '115' : '25'"
+                  :width="$vuetify.breakpoint.mdAndUp ? '115' : '35'"
                   height="50"
                   :alt="skill.title"
                 ></v-img>
