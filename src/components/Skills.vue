@@ -176,7 +176,7 @@ export default class Skills extends Vue {
       logo: "rest-logo.png"
     },
     {
-      title: "Socket.io",
+      title: "Socket.IO",
       logo: "socket.io-logo.png"
     },
     {
