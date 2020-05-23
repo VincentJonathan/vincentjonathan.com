@@ -64,7 +64,7 @@ export default class Projects extends Vue {
       description: "Nobar is a simple website to watch youtube videos together",
       github: "https://github.com/VincentJonathan/nobar-vue/",
       site: "http://nobar.vincentjonathan.com/",
-      tags: ["Vue", "Vuetify", "socket.io"]
+      tags: ["Vue", "Vuetify", "Socket.IO"]
     },
     {
       title: "Ulas",
@@ -80,6 +80,13 @@ export default class Projects extends Vue {
       github: "https://github.com/VincentJonathan/scrape-yt/",
       site: "https://www.npmjs.com/package/scrape-yt/",
       tags: ["Javascript", "Typescript", "cheerio"]
+    },
+    {
+      title: "vincentjonathan.com",
+      description: "My personal website",
+      github: "https://github.com/VincentJonathan/vincentjonathan.com",
+      site: "https://vincentjonathan.com/",
+      tags: ["Vue", "Vuetify", "Socket.IO"]
     },
     {
       title: "Keyblind",
