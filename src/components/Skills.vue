@@ -23,7 +23,7 @@
                       :alt="skill.title"
                     ></v-img>
                   </v-col>
-                  <v-col cols="auto">
+                  <v-col cols="auto" class="align-center d-flex">
                     <div class="display-1">
                       {{ skill.title }}
                     </div>
@@ -48,25 +48,27 @@
         </template>
       </v-col>
       <v-col cols="12">
-        <h4 class="primary--text headline mb-4">Other Skills</h4>
-        <div class="font-weight-light">
-          <div class="mb-2">
-            I mostly use Javascript / Typescript and Python, but i also know
-            Java and PHP.
-          </div>
-          <v-row class="ml-n1">
-            <v-col
-              cols="auto"
-              class="pa-1"
-              v-for="pill in otherSkills"
-              :key="pill"
-            >
-              <v-chip color="primary" outlined small>
-                {{ pill }}
-              </v-chip>
-            </v-col>
-          </v-row>
-        </div>
+        <v-slide-group class="pa-4" mandatory centerActive>
+          <v-slide-item v-for="skill in otherSkills" :key="skill.title">
+            <v-row>
+              <v-col cols="12" class="justify-center d-flex">
+                <v-img
+                  :src="getImgUrl(skill.logo)"
+                  v-if="skill.logo"
+                  contain
+                  width="150"
+                  height="50"
+                  :alt="skill.title"
+                ></v-img>
+              </v-col>
+              <v-col cols="12" class="justify-center">
+                <div class="text-center font-weight-light">
+                  {{ skill.title }}
+                </div>
+              </v-col>
+            </v-row>
+          </v-slide-item>
+        </v-slide-group>
       </v-col>
     </v-row>
   </section>
@@ -83,7 +85,7 @@ export default class Skills extends Vue {
       title: "Vue.js",
       logo: "vue-logo.png",
       background: "vue.png",
-      pills: ["Vuex", "Vue-Socket.io", "Vuetify", "BootstrapVue"]
+      pills: ["Vuex", "Vue-Socket.IO", "Vuetify", "BootstrapVue"]
     },
     {
       title: "mongoDB",
@@ -117,14 +119,70 @@ export default class Skills extends Vue {
   ];
 
   otherSkills = [
-    "Javascript",
-    "Typescript",
-    "Java",
-    "PHP",
-    "Bootstrap",
-    "jQuery",
-    "REST API",
-    "socket.io"
+    {
+      title: "Javascript",
+      logo: "js-logo.png"
+    },
+    {
+      title: "Typescript",
+      logo: "ts-logo.png"
+    },
+    {
+      title: "ESLint",
+      logo: "eslint-logo.png"
+    },
+    {
+      title: "Prettier",
+      logo: "prettier-logo.png"
+    },
+    {
+      title: "Python",
+      logo: "python-logo.png"
+    },
+    {
+      title: "Nginx",
+      logo: "nginx-logo.png"
+    },
+    {
+      title: "Redis",
+      logo: "redis-logo.png"
+    },
+    {
+      title: "JWT",
+      logo: "jwt-logo.png"
+    },
+    {
+      title: "Java",
+      logo: "java-logo.png"
+    },
+    {
+      title: "PHP",
+      logo: "php-logo.png"
+    },
+    {
+      title: "Docker",
+      logo: "docker-logo.png"
+    },
+    {
+      title: "Bootstrap",
+      logo: "bootstrap-logo.png"
+    },
+    {
+      title: "jQuery",
+      logo: "jquery-logo.png"
+    },
+    {
+      title: "REST API",
+      logo: "rest-logo.png"
+    },
+    {
+      title: "Socket.io",
+      logo: "socket.io-logo.png"
+    },
+    {
+      title: "WebSocket",
+      logo: "websocket-logo.png"
+    }
   ];
 }
 </script>
