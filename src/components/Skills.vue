@@ -1,6 +1,6 @@
 <template>
   <section id="skills">
-    <v-row class="px-6 py-10 mx-0">
+    <v-row class="px-md-6 py-12 mx-0">
       <v-col cols="12">
         <h3 class="primary--text display-2 font-weight-medium">Skills</h3>
       </v-col>
@@ -9,7 +9,7 @@
           <div :key="skill.title">
             <v-parallax
               :src="getImgUrl(skill.background)"
-              class="mx-n11"
+              class="mx-n5 mx-md-n11"
               :height="250"
             >
               <div class="pa-8">
@@ -48,7 +48,7 @@
         </template>
       </v-col>
       <v-col cols="12">
-        <v-slide-group class="pa-4" mandatory centerActive>
+        <v-slide-group class="" mandatory show-arrows>
           <v-slide-item v-for="skill in otherSkills" :key="skill.title">
             <v-row>
               <v-col cols="12" class="justify-center d-flex">
@@ -56,7 +56,7 @@
                   :src="getImgUrl(skill.logo)"
                   v-if="skill.logo"
                   contain
-                  width="150"
+                  :width="$vuetify.breakpoint.mdAndUp ? '115' : '25'"
                   height="50"
                   :alt="skill.title"
                 ></v-img>

@@ -1,6 +1,6 @@
 <template>
   <section id="learning">
-    <v-row class="px-6 py-10 mx-0">
+    <v-row class="px-md-6 py-12 mx-0">
       <v-col cols="12">
         <h3 class="primary--text display-2 font-weight-medium">
           Learning Roadmap
