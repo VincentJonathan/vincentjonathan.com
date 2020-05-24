@@ -47,14 +47,19 @@
         <h4 class="title primary--text">Current Activity</h4>
         <transition name="fade" mode="out-in">
           <div
-            class="font-weight-light body-1 py-3"
+            class="font-weight-light body-1 py-2"
             :key="currentFile.fileName && fileIcon && isConnected"
           >
             <template v-if="isConnected && currentFile.fileName">
               <v-row no-gutters>
                 <v-spacer v-if="!$vuetify.breakpoint.lgAndDown" />
                 <transition name="fade" mode="out-in">
-                  <v-col cols="auto" :key="currentFile.fileName">
+                  <v-col
+                    cols="auto"
+                    class="px-4"
+                    :key="currentFile.fileName"
+                    :order="$vuetify.breakpoint.lgAndDown ? '2' : '1'"
+                  >
                     <div class="mb-2">
                       {{ currentFile.fileName }}
                     </div>
@@ -81,9 +86,9 @@
                 <transition name="fade" mode="out-in">
                   <v-col
                     cols="auto"
-                    class="px-3"
                     v-if="fileIcon"
                     :key="fileIcon"
+                    :order="$vuetify.breakpoint.lgAndDown ? '1' : '2'"
                   >
                     <v-img
                       :src="require(`@/assets/icons/${fileIcon}.svg`)"
