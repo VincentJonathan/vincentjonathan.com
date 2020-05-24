@@ -37,50 +37,63 @@
         :class="!$vuetify.breakpoint.lgAndDown ? 'text-right pr-12' : ''"
       >
         <h4 class="title primary--text">Current Activity</h4>
-        <template v-if="isConnected && currentFile.fileName">
-          <div class="font-weight-light body-1">
-            <v-row>
-              <v-spacer v-if="!$vuetify.breakpoint.lgAndDown" />
-
-              <transition name="fade" mode="out-in">
-                <v-col cols="auto" :key="currentFile.fileName">
-                  <div class="mb-2">
-                    {{ currentFile.fileName }}
-                  </div>
-                  <div class="body-2">
-                    {{ sizeFormat.size }}
-                    <span class="overline">{{ sizeFormat.unit }}</span
-                    >, {{ currentFile.lineCount }}
-                    <span class="overline">lines</span>
-                  </div>
-                  <div class="caption">
-                    <span>on project</span>
-                    {{ currentFile.workspace }}
-                  </div>
-                </v-col>
-              </transition>
-              <transition name="fade" mode="out-in">
-                <v-col cols="auto" v-if="fileIcon" :key="fileIcon">
-                  <v-img
-                    :src="require(`@/assets/icons/${fileIcon}.svg`)"
-                    height="70"
-                    width="70"
-                  />
-                </v-col>
-              </transition>
-            </v-row>
+        <transition name="fade" mode="out-in">
+          <div
+            class="font-weight-light body-1 py-3"
+            :key="currentFile.fileName && fileIcon && isConnected"
+          >
+            <template v-if="isConnected && currentFile.fileName">
+              <v-row no-gutters>
+                <v-spacer v-if="!$vuetify.breakpoint.lgAndDown" />
+                <transition name="fade" mode="out-in">
+                  <v-col cols="auto" :key="currentFile.fileName">
+                    <div class="mb-2">
+                      {{ currentFile.fileName }}
+                    </div>
+                    <div class="body-2">
+                      <transition name="fade" mode="out-in">
+                        <span :key="sizeFormat.size">
+                          {{ sizeFormat.size }}
+                          <span class="overline">{{ sizeFormat.unit }}</span>
+                        </span> </transition
+                      >,
+                      <transition name="fade" mode="out-in">
+                        <span :key="currentFile.lineCount">
+                          {{ currentFile.lineCount }}
+                          <span class="overline">lines</span>
+                        </span>
+                      </transition>
+                    </div>
+                    <div class="caption">
+                      <span>on project</span>
+                      {{ currentFile.workspace }}
+                    </div>
+                  </v-col>
+                </transition>
+                <transition name="fade" mode="out-in">
+                  <v-col
+                    cols="auto"
+                    class="px-3"
+                    v-if="fileIcon"
+                    :key="fileIcon"
+                  >
+                    <v-img
+                      :src="require(`@/assets/icons/${fileIcon}.svg`)"
+                      height="70"
+                      width="70"
+                    />
+                  </v-col>
+                </transition>
+              </v-row>
+            </template>
+            <template v-else-if="isConnected">
+              Idling
+            </template>
+            <template v-else>
+              Offline
+            </template>
           </div>
-        </template>
-        <template v-else-if="isConnected">
-          <div class="font-weight-light body-1">
-            Idling
-          </div>
-        </template>
-        <template v-else>
-          <div class="font-weight-light body-1">
-            Offline
-          </div>
-        </template>
+        </transition>
       </v-col>
     </v-row>
   </section>
@@ -101,6 +114,15 @@ export default class About extends Vue {
   @Socket("activeFileChanged")
   updateFile(currentFile) {
     this.currentFile = currentFile;
+  }
+
+  @Socket("fileSaved")
+  updateFileSize(savedFile) {
+    if (savedFile.fileName !== this.currentFile.fileName) return;
+    this.currentFile = {
+      ...this.currentFile,
+      ...savedFile
+    };
   }
 
   @Socket()
