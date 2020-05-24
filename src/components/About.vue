@@ -14,10 +14,18 @@
         <v-row>
           <v-col cols="auto" class="pt-0">
             <div class="mb-4">
-              <v-icon class="primary--text">fas fa-map-marker-alt</v-icon>
+              <font-awesome-icon
+                size="lg"
+                class="primary--text"
+                :icon="['fas', 'map-marker-alt']"
+              />
             </div>
             <div>
-              <v-icon class="primary--text">fas fa-envelope</v-icon>
+              <font-awesome-icon
+                size="lg"
+                class="primary--text"
+                :icon="['fas', 'envelope']"
+              />
             </div>
           </v-col>
           <v-col cols="auto" class="pt-0">

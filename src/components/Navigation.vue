@@ -26,16 +26,16 @@
         <a
           href="https://github.com/VincentJonathan"
           target="_blank"
-          class="mx-4"
+          class="mx-4 white--text"
         >
-          <v-icon>fab fa-github</v-icon>
+          <font-awesome-icon size="lg" :icon="['fab', 'github']" />
         </a>
         <a
           href="https://stackoverflow.com/users/12397250/owl"
           target="_blank"
-          class="mx-4"
+          class="mx-4 white--text"
         >
-          <v-icon>fab fa-stack-overflow</v-icon>
+          <font-awesome-icon size="lg" :icon="['fab', 'stack-overflow']" />
         </a>
       </div>
     </v-row>

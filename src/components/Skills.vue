@@ -48,7 +48,7 @@
         </template>
       </v-col>
       <v-col cols="12" class="px-0 px-md-3">
-        <v-slide-group class="" mandatory show-arrows>
+        <v-slide-group mandatory show-arrows>
           <v-slide-item v-for="skill in otherSkills" :key="skill.title">
             <v-row>
               <v-col cols="12" class="justify-center d-flex">

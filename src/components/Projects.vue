@@ -30,17 +30,17 @@
                   v-if="project.github"
                   :href="project.github"
                   target="_blank"
-                  class="mr-4"
+                  class="mr-4 white--text"
                 >
-                  <v-icon small>fab fa-github</v-icon>
+                  <font-awesome-icon :icon="['fab', 'github']" />
                 </a>
                 <a
                   v-if="project.site"
                   :href="project.site"
                   target="_blank"
-                  class="mr-4"
+                  class="mr-4 white--text"
                 >
-                  <v-icon small>fas fa-eye</v-icon>
+                  <font-awesome-icon :icon="['fas', 'eye']" />
                 </a>
               </v-col>
             </v-row>
