@@ -6,9 +6,9 @@
       </v-col>
       <v-col>
         <v-row v-for="(project, index) in projects" :key="index">
-          <v-col cols="12" lg="6" class="font-weight-light no-decoration">
+          <v-col cols="12" lg="6" class="no-decoration">
             <h5 class="title primary--text mb-1">{{ project.title }}</h5>
-            <p>{{ project.description }}</p>
+            <p class="body-2 font-weight-light">{{ project.description }}</p>
             <v-row class="ml-n1">
               <v-col cols="auto">
                 <v-row>
@@ -87,6 +87,15 @@ export default class Projects extends Vue {
       github: "https://github.com/VincentJonathan/vincentjonathan.com",
       site: "https://vincentjonathan.com/",
       tags: ["Vue", "Vuetify", "Socket.IO"]
+    },
+    {
+      title: "Socket.IO Emitter [VSCode]",
+      description:
+        "Socket.IO Emitter is a simple Visual Studio Code extension that allows you to connect to a Socket.IO server, listens to VSCode events, and emits it to your server",
+      github: "https://github.com/VincentJonathan/vscode-socket.io-emitter",
+      site:
+        "https://marketplace.visualstudio.com/items?itemName=vincentjonathan.socket-io-emitter",
+      tags: ["Socket.IO"]
     },
     {
       title: "Keyblind",
