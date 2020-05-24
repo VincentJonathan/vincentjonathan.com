@@ -56,7 +56,6 @@
                 <transition name="fade" mode="out-in">
                   <v-col
                     cols="auto"
-                    class="px-4"
                     :key="currentFile.fileName"
                     :order="$vuetify.breakpoint.lgAndDown ? '2' : '1'"
                   >
@@ -88,6 +87,7 @@
                     cols="auto"
                     v-if="fileIcon"
                     :key="fileIcon"
+                    :class="$vuetify.breakpoint.lgAndDown ? 'pr-4' : 'pl-4'"
                     :order="$vuetify.breakpoint.lgAndDown ? '1' : '2'"
                   >
                     <v-img
