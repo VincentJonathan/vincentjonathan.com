@@ -32,8 +32,14 @@
             <div class="mb-4">
               Indonesia
             </div>
-            <div>
-              me@vincentjonathan.com
+            <div class="no-decoration">
+              <a
+                href="mailto:me@vincentjonathan.com"
+                class="white--text"
+                target="_blank"
+              >
+                me@vincentjonathan.com
+              </a>
             </div>
           </v-col>
         </v-row>
