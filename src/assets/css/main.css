@@ -1,10 +1,5 @@
 .bg-main {
-    background-image: url("~@/assets/img/bg.jpg");
     height: 100vh;
-}
-
-.bg-dark {
-    background-color: #00000080;
 }
 
 .no-decoration a{
