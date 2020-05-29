@@ -39,8 +39,8 @@ export default new Vuetify({
     themes: {
       dark: {
         primary: colors.blue.lighten1,
-        secondary: "#181818",
-        background: colors.grey.darken4
+        secondary: "#111314",
+        background: "#181a1f"
       }
     }
   }
