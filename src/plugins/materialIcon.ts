@@ -1,8 +1,8 @@
-// From VSCode Material Icon
-
 /**
- * Defines file icons
+ * From VSCode Material Icon Theme
+ * https://github.com/PKief/vscode-material-icon-theme
  */
+
 const fileIcons = {
   defaultIcon: { name: "file" },
   icons: [
@@ -194,6 +194,7 @@ const fileIcons = {
     { name: "typescript-def", fileExtensions: ["d.ts"] },
     { name: "markojs", fileExtensions: ["marko"] },
     { name: "pdf", fileExtensions: ["pdf"] },
+    { name: "php", fileExtensions: ["php", "phtml"] },
     { name: "table", fileExtensions: ["xlsx", "xls", "csv", "tsv"] },
     {
       name: "vscode",
