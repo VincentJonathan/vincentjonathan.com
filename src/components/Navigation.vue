@@ -10,7 +10,11 @@
       class="flex-column fill-height py-5 mx-0 align-center"
       mobile-break-point="sm"
     >
-      <h2 class="headline text-center">Vincent Jonathan</h2>
+      <a text class="body-2 my-2 text-white" v-scroll-to="'#hero'">
+        <h2 class="headline text-center">
+          Vincent Jonathan
+        </h2>
+      </a>
       <v-divider class="my-4" />
       <v-btn
         v-for="(nav, i) in navs"
