@@ -4,14 +4,14 @@
       <v-row class="fill-height mx-0 align-center justify-end">
         <div class="text-center py-8 mr-4 pa-md-12 mr-md-12">
           <div
-            class="text-uppercase text-right"
-            :class="$vuetify.breakpoint.lgAndUp ? 'display-3' : 'display-2'"
+            class="primary--text text-uppercase text-right font-weight-light"
+            :class="$vuetify.breakpoint.lgAndUp ? 'display-4' : 'display-2'"
           >
             Vincent Jonathan
           </div>
           <h1
-            class="primary--text text-uppercase text-right"
-            :class="$vuetify.breakpoint.lgAndUp ? 'display-4' : 'display-2'"
+            class="text-uppercase text-right font-weight-thin"
+            :class="$vuetify.breakpoint.lgAndUp ? 'display-2' : 'display-1'"
           >
             FULL STACK DEVELOPER
           </h1>
