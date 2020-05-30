@@ -11,7 +11,7 @@
       mobile-break-point="sm"
     >
       <a text class="body-2 my-2 text-white" v-scroll-to="'#hero'">
-        <h2 class="headline text-center">
+        <h2 class="title font-weight-light text-center text-uppercase">
           Vincent Jonathan
         </h2>
       </a>
