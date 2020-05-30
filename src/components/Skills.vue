@@ -62,7 +62,7 @@
                 ></v-img>
               </v-col>
               <v-col cols="12" class="justify-center">
-                <div class="text-center font-weight-light">
+                <div class="body-1 text-center font-weight-light">
                   {{ skill.title }}
                 </div>
               </v-col>
