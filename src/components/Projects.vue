@@ -8,7 +8,7 @@
         <v-row v-for="(project, index) in projects" :key="index">
           <v-col cols="12" lg="6" class="no-decoration">
             <h5 class="title primary--text mb-1">{{ project.title }}</h5>
-            <p class="body-2 font-weight-light">{{ project.description }}</p>
+            <p class="body-1 font-weight-light">{{ project.description }}</p>
             <v-row class="ml-n1">
               <v-col cols="auto">
                 <v-row>
