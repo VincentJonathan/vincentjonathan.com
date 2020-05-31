@@ -47,7 +47,7 @@
       <v-col
         cols="12 "
         xl="4"
-        class="mt-6 mt-lg-0 py-0"
+        class="pt-6 pt-xl-0 py-0"
         :class="!$vuetify.breakpoint.lgAndDown ? 'text-right pr-12' : ''"
       >
         <h4 class="title primary--text">Current Activity</h4>
