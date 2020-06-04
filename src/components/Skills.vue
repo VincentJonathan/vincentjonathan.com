@@ -128,6 +128,10 @@ export default class Skills extends Vue {
       logo: "ts-logo.png"
     },
     {
+      title: "Node.js",
+      logo: "node-logo.png"
+    },
+    {
       title: "ESLint",
       logo: "eslint-logo.png"
     },
