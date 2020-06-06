@@ -88,6 +88,12 @@ export default class Skills extends Vue {
       pills: ["Vuex", "Vue-Socket.IO", "Vuetify", "BootstrapVue"]
     },
     {
+      title: "React",
+      logo: "react-logo.png",
+      background: "react.png",
+      pills: ["Redux", "Material-UI"]
+    },
+    {
       title: "mongoDB",
       logo: "mongodb-logo.png",
       background: "mongodb.png",
