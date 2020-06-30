@@ -85,7 +85,14 @@ export default class Skills extends Vue {
       title: "Vue.js",
       logo: "vue-logo.png",
       background: "vue.png",
-      pills: ["Vuex", "Vue-Socket.IO", "Vuetify", "BootstrapVue"]
+      pills: [
+        "Vuex",
+        "Composition",
+        "Vue-Socket.IO",
+        "Vuetify",
+        "Quasar",
+        "BootstrapVue"
+      ]
     },
     {
       title: "React",
