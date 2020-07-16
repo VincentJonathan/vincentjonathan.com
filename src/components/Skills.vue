@@ -127,7 +127,7 @@ export default class Skills extends Vue {
       title: "Slim",
       logo: "slim-logo.png",
       background: "slim.png",
-      pills: ["JWT", "PDO"]
+      pills: ["JWT", "PDO", "RedBeanPHP"]
     }
   ];
 
