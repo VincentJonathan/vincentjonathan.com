@@ -60,6 +60,13 @@ import Component from "vue-class-component";
 export default class Projects extends Vue {
   projects = [
     {
+      title: "Colte",
+      description:
+        "Colte is a website for Indonesian programmer and developer community",
+      site: "http://colte.dev/",
+      tags: ["Vue", "Quasar", "MongoDB", "Express.js", "Redis"]
+    },
+    {
       title: "Nobar",
       description: "Nobar is a simple website to watch youtube videos together",
       github: "https://github.com/SuspiciousLookingOwl/nobar-vue/",
