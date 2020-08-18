@@ -39,7 +39,7 @@
           <v-col cols="auto" class="pt-0">
             <div class="mb-4">
               <a
-                href="https://github.com/VincentJonathan"
+                href="https://github.com/SuspiciousLookingOwl"
                 class="white--text"
                 target="_blank"
               >

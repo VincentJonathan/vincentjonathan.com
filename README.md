@@ -6,7 +6,7 @@ Feel free to use it as a reference.
 
 ## Project setup
 ```
-git clone https://github.com/VincentJonathan/vincentjonathan.com.git
+git clone https://github.com/SuspiciousLookingOwl/vincentjonathan.com.git
 cd vincentjonathan.com
 npm install
 ```

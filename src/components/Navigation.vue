@@ -28,7 +28,7 @@
       <v-spacer />
       <div class="no-decoration">
         <a
-          href="https://github.com/VincentJonathan"
+          href="https://github.com/SuspiciousLookingOwl"
           target="_blank"
           class="mx-4 white--text"
         >

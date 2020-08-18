@@ -62,7 +62,7 @@ export default class Projects extends Vue {
     {
       title: "Nobar",
       description: "Nobar is a simple website to watch youtube videos together",
-      github: "https://github.com/VincentJonathan/nobar-vue/",
+      github: "https://github.com/SuspiciousLookingOwl/nobar-vue/",
       site: "http://nobar.vincentjonathan.com/",
       tags: ["Vue", "Vuetify", "Socket.IO"]
     },
@@ -77,14 +77,14 @@ export default class Projects extends Vue {
       title: "scrape-yt",
       description:
         "scrape-yt is a simple javascript package to scrape information from Youtube",
-      github: "https://github.com/VincentJonathan/scrape-yt/",
+      github: "https://github.com/SuspiciousLookingOwl/scrape-yt/",
       site: "https://www.npmjs.com/package/scrape-yt/",
       tags: ["Javascript", "Typescript", "cheerio"]
     },
     {
       title: "vincentjonathan.com",
       description: "My personal website",
-      github: "https://github.com/VincentJonathan/vincentjonathan.com",
+      github: "https://github.com/SuspiciousLookingOwl/vincentjonathan.com",
       site: "https://vincentjonathan.com/",
       tags: ["Vue", "Vuetify", "Socket.IO"]
     },
@@ -92,7 +92,8 @@ export default class Projects extends Vue {
       title: "Socket.IO Emitter [VSCode]",
       description:
         "Socket.IO Emitter is a simple Visual Studio Code extension that allows you to connect to a Socket.IO server, listens to VSCode events, and emits it to your server",
-      github: "https://github.com/VincentJonathan/vscode-socket.io-emitter",
+      github:
+        "https://github.com/SuspiciousLookingOwl/vscode-socket.io-emitter",
       site:
         "https://marketplace.visualstudio.com/items?itemName=vincentjonathan.socket-io-emitter",
       tags: ["Socket.IO"]
