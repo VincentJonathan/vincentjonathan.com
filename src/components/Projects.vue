@@ -63,6 +63,7 @@ export default class Projects extends Vue {
       title: "Colte",
       description:
         "Colte is a website for Indonesian programmer and developer community",
+      github: "https://github.com/colte-dev/colte.dev/",
       site: "http://colte.dev/",
       tags: ["Vue", "Quasar", "MongoDB", "Express.js", "Redis"]
     },
