@@ -71,15 +71,7 @@ export default class Projects extends Vue {
       title: "Nobar",
       description: "Nobar is a simple website to watch youtube videos together",
       github: "https://github.com/SuspiciousLookingOwl/nobar-vue/",
-      site: "http://nobar.vincentjonathan.com/",
       tags: ["Vue", "Vuetify", "Socket.IO"]
-    },
-    {
-      title: "Ulas",
-      description:
-        "Ulas is a website that allows user to give a review to a product or place",
-      site: "http://ulas.vincentjonathan.com/",
-      tags: ["Vue", "Vuetify", "Flask", "mongoDB"]
     },
     {
       title: "scrape-yt",
@@ -116,8 +108,8 @@ export default class Projects extends Vue {
     {
       title: "DMR",
       description:
-        "DMR is a private web application for store inventory management",
-      tags: ["Slim", "MySQL", "Vue", "BootstrapVue"]
+        "DMR is a private web application for store stock management",
+      tags: ["Express", "MySQL", "Vue", "Quasar"]
     }
   ];
 }
