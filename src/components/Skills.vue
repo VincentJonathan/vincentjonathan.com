@@ -121,7 +121,7 @@ export default class Skills extends Vue {
       title: "express",
       logo: "",
       background: "express.png",
-      pills: ["JWT", "Mongoose", "Passport"]
+      pills: ["JWT", "Mongoose", "Sequelize", "Passport"]
     },
     {
       title: "Slim",
