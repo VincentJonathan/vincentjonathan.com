@@ -103,6 +103,7 @@ export default class Projects extends Vue {
       description:
         "Keyblind is a typing practice website with many language and options to choose",
       site: "https://keyblind.com",
+      github: "https://github.com/SuspiciousLookingOwl/keyblind",
       tags: ["Vue"]
     },
     {
