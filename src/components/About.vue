@@ -5,10 +5,10 @@
         <h3 class="primary--text display-2 font-weight-medium">About Me</h3>
       </v-col>
       <v-col cols="12" md="6" lg="5" xl="4" class="font-weight-light">
-        I'm a junior full-stack developer, but currently focusing more on front
-        end and back end developing, and after that i will improve my DevOps
-        skill. I started learning about programming since mid 2017 and since
-        then I've become passionate about programming.
+        I'm a full-stack developer, but currently focusing more on front end and
+        back end developing, and after that i will improve my DevOps skill. I
+        started learning about programming since mid 2017 and since then I've
+        become passionate about programming.
       </v-col>
       <v-col cols="12" md="6" lg="7" xl="3" class="pl-md-12">
         <v-row>
@@ -140,7 +140,7 @@ export default class About extends Vue {
     if (savedFile.fileName !== this.currentFile.fileName) return;
     this.currentFile = {
       ...this.currentFile,
-      ...savedFile
+      ...savedFile,
     };
   }
 
@@ -169,7 +169,7 @@ export default class About extends Vue {
 
     return {
       size: parseFloat(size.toFixed(2)),
-      unit: this.sizes[currentDivision]
+      unit: this.sizes[currentDivision],
     };
   }
   get fileExtension() {
