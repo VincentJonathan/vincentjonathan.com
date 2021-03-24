@@ -68,18 +68,12 @@ export default class Projects extends Vue {
       tags: ["Vue", "Quasar", "MongoDB", "Express.js", "Redis"]
     },
     {
-      title: "Nobar",
-      description: "Nobar is a simple website to watch youtube videos together",
-      github: "https://github.com/SuspiciousLookingOwl/nobar-vue/",
-      tags: ["Vue", "Vuetify", "Socket.IO"]
-    },
-    {
-      title: "scrape-yt",
+      title: "youtubei",
       description:
-        "scrape-yt is a simple javascript package to scrape information from Youtube",
-      github: "https://github.com/SuspiciousLookingOwl/scrape-yt/",
-      site: "https://www.npmjs.com/package/scrape-yt/",
-      tags: ["Javascript", "Typescript", "cheerio"]
+        "youtubei is a simple javascript package to fetch information from Youtube",
+      github: "https://github.com/SuspiciousLookingOwl/youtubei/",
+      site: "https://www.npmjs.com/package/youtubei/",
+      tags: ["Typescript"]
     },
     {
       title: "vincentjonathan.com",
@@ -102,7 +96,7 @@ export default class Projects extends Vue {
       title: "Keyblind",
       description:
         "Keyblind is a typing practice website with many language and options to choose",
-      site: "https://keyblind.com",
+      site: "https://keyblind.netlify.app/",
       github: "https://github.com/SuspiciousLookingOwl/keyblind",
       tags: ["Vue"]
     },
