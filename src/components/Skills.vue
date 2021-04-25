@@ -91,115 +91,115 @@ export default class Skills extends Vue {
         "Vue-Socket.IO",
         "Vuetify",
         "Quasar",
-        "BootstrapVue",
-      ],
+        "BootstrapVue"
+      ]
     },
     {
       title: "React",
       logo: "react-logo.png",
       background: "react.png",
-      pills: ["Hooks", "Redux", "Material-UI"],
+      pills: ["Hooks", "Redux", "Material-UI"]
     },
     {
       title: "mongoDB",
       logo: "mongodb-logo.png",
       background: "mongodb.png",
-      pills: ["Aggregation", "Transaction"],
+      pills: ["Aggregation", "Transaction"]
     },
     {
       title: "MySQL",
       logo: "mysql-logo.png",
-      background: "mysql.png",
+      background: "mysql.png"
     },
     {
       title: "Flask",
       logo: "flask-logo.png",
       background: "flask.png",
-      pills: ["JWT", "PyMongo"],
+      pills: ["JWT", "PyMongo"]
     },
     {
       title: "express",
       logo: "",
       background: "express.png",
-      pills: ["JWT", "Mongoose", "Sequelize", "Passport"],
+      pills: ["JWT", "Mongoose", "Sequelize", "Passport"]
     },
     {
       title: "Slim",
       logo: "slim-logo.png",
       background: "slim.png",
-      pills: ["JWT", "PDO", "RedBeanPHP"],
-    },
+      pills: ["JWT", "PDO", "RedBeanPHP"]
+    }
   ];
 
   otherSkills = [
     {
       title: "Javascript",
-      logo: "js-logo.png",
+      logo: "js-logo.png"
     },
     {
       title: "Typescript",
-      logo: "ts-logo.png",
+      logo: "ts-logo.png"
     },
     {
       title: "Node.js",
-      logo: "node-logo.png",
+      logo: "node-logo.png"
     },
     {
       title: "ESLint",
-      logo: "eslint-logo.png",
+      logo: "eslint-logo.png"
     },
     {
       title: "Prettier",
-      logo: "prettier-logo.png",
+      logo: "prettier-logo.png"
     },
     {
       title: "Python",
-      logo: "python-logo.png",
+      logo: "python-logo.png"
     },
     {
       title: "Nginx",
-      logo: "nginx-logo.png",
+      logo: "nginx-logo.png"
     },
     {
       title: "Redis",
-      logo: "redis-logo.png",
+      logo: "redis-logo.png"
     },
     {
       title: "JWT",
-      logo: "jwt-logo.png",
+      logo: "jwt-logo.png"
     },
     {
       title: "Java",
-      logo: "java-logo.png",
+      logo: "java-logo.png"
     },
     {
       title: "PHP",
-      logo: "php-logo.png",
+      logo: "php-logo.png"
     },
     {
       title: "Docker",
-      logo: "docker-logo.png",
+      logo: "docker-logo.png"
     },
     {
       title: "Bootstrap",
-      logo: "bootstrap-logo.png",
+      logo: "bootstrap-logo.png"
     },
     {
       title: "jQuery",
-      logo: "jquery-logo.png",
+      logo: "jquery-logo.png"
     },
     {
       title: "REST API",
-      logo: "rest-logo.png",
+      logo: "rest-logo.png"
     },
     {
       title: "Socket.IO",
-      logo: "socket.io-logo.png",
+      logo: "socket.io-logo.png"
     },
     {
       title: "WebSocket",
-      logo: "websocket-logo.png",
-    },
+      logo: "websocket-logo.png"
+    }
   ];
 }
 </script>
