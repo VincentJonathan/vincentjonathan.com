@@ -68,6 +68,15 @@ export default class Projects extends Vue {
       tags: ["Vue", "Quasar", "MongoDB", "Express.js", "Redis"]
     },
     {
+      title: "Web Frameworks Benchmark",
+      description:
+        "Colte is a website for Indonesian programmer and developer community",
+      github:
+        "https://github.com/SuspiciousLookingOwl/web-frameworks-benchmark",
+      site: "https://web-frameworks-benchmark.netlify.app/",
+      tags: ["React"]
+    },
+    {
       title: "youtubei",
       description:
         "youtubei is a simple javascript package to fetch information from Youtube",

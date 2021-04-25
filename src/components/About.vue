@@ -140,7 +140,7 @@ export default class About extends Vue {
     if (savedFile.fileName !== this.currentFile.fileName) return;
     this.currentFile = {
       ...this.currentFile,
-      ...savedFile,
+      ...savedFile
     };
   }
 
@@ -169,7 +169,7 @@ export default class About extends Vue {
 
     return {
       size: parseFloat(size.toFixed(2)),
-      unit: this.sizes[currentDivision],
+      unit: this.sizes[currentDivision]
     };
   }
   get fileExtension() {

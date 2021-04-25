@@ -85,26 +85,18 @@ export default class Skills extends Vue {
       title: "Vue.js",
       logo: "vue-logo.png",
       background: "vue.png",
-      pills: [
-        "Vuex",
-        "Composition",
-        "Vue-Socket.IO",
-        "Vuetify",
-        "Quasar",
-        "BootstrapVue"
-      ]
+      pills: ["Vuex", "Composition", "Vuetify", "Quasar", "BootstrapVue"]
     },
     {
       title: "React",
       logo: "react-logo.png",
       background: "react.png",
-      pills: ["Hooks", "Redux", "Material-UI"]
+      pills: ["Hooks", "Material-UI"]
     },
     {
       title: "mongoDB",
       logo: "mongodb-logo.png",
-      background: "mongodb.png",
-      pills: ["Aggregation", "Transaction"]
+      background: "mongodb.png"
     },
     {
       title: "MySQL",
@@ -115,19 +107,19 @@ export default class Skills extends Vue {
       title: "Flask",
       logo: "flask-logo.png",
       background: "flask.png",
-      pills: ["JWT", "PyMongo"]
+      pills: ["SQLAlchemy"]
     },
     {
       title: "express",
       logo: "",
       background: "express.png",
-      pills: ["JWT", "Mongoose", "Sequelize", "Passport"]
+      pills: ["Mongoose", "Sequelize"]
     },
     {
       title: "Slim",
       logo: "slim-logo.png",
       background: "slim.png",
-      pills: ["JWT", "PDO", "RedBeanPHP"]
+      pills: ["RedBeanPHP"]
     }
   ];
 
