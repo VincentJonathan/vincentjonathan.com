@@ -21,13 +21,6 @@
                 :icon="['fas', 'envelope']"
               />
             </div>
-            <div class="mb-4">
-              <font-awesome-icon
-                size="lg"
-                class="primary--text"
-                :icon="['fab', 'discord']"
-              />
-            </div>
             <div>
               <font-awesome-icon
                 size="lg"
@@ -54,9 +47,6 @@
               >
                 me@vincentjonathan.com
               </a>
-            </div>
-            <div class="mb-4">
-              Owl#9652
             </div>
             <div>
               <a

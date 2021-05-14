@@ -4,11 +4,7 @@ import colors from "vuetify/lib/util/colors";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
-import {
-  faGithub,
-  faDiscord,
-  faStackOverflow
-} from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faStackOverflow } from "@fortawesome/free-brands-svg-icons";
 import {
   faMapMarkerAlt,
   faEnvelope,
@@ -21,7 +17,6 @@ Vue.use(Vuetify);
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 library.add(
   faGithub,
-  faDiscord,
   faStackOverflow,
   faMapMarkerAlt,
   faEnvelope,
